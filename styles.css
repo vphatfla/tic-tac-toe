@@ -1,0 +1,20 @@
+.button-Clicked{
+    background-color: black;
+    color: white;
+}
+.hidden-div{
+    visibility: hidden;
+}
+.container{
+    display: grid;
+    grid-template-rows: 70px 70px 70px;
+    grid-template-columns: 70px 70px 70px;
+}
+.box {
+    background: #444;
+    border: 1px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AAA;
+}
