@@ -1,26 +1,114 @@
 html{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-image: url("images/background-image.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Mukta', sans-serif;
+}
+button{
+    border-radius: 17% 0px 17% 0px;
+    border: 1px solid rgba(111, 111, 111, 0.857);
+    background-color: rgba(230, 230, 230, 0.165);
+    padding: 10%;
+    font-size: 15px;
+    
+}
+button:hover{
+    background-color: rgba(121, 121, 121, 0.487);
+    color: black;
+}
+.top-button{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50%;
+}
 .button-Clicked{
-    background-color: black;
-    color: white;
+    background-color: rgba(115, 209, 139, 0.275);
+    color: black
+}
+.display-info-submit{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.display-info-submit button{
+    padding: 3%;
+    width: fit-content;
+    margin-top: 10%;
+}
+.display-info-submit button:focus{
+    background-color: rgba(255, 129, 129, 0.2);
+}
+.display-info-submit input{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgba(255, 255, 255, 0.659);
+    border: 1px solid rgba(0, 0, 0, 0.282);
 }
 .hidden-div{
     visibility: hidden;
 }
 .container{
+    float:right;
     display: grid;
-    grid-template-rows: 70px 70px 70px;
-    grid-template-columns: 70px 70px 70px;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
 }
 .box {
-    background: #444;
+    background: rgba(68, 68, 68, 0.159);
     border: 1px solid #555;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #AAA;
+}
+.box:hover{
+    background-color: transparent;
+}
+.score-board{
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 13%;
+    width: 100%;
+}
+.score-board div{
+    text-align: center;
+}
+.imgInBox{
+    max-width: 80%;
+    max-height: 80%;
+}
+.score-content{
+    margin-top: -1%;
+    font-size: 20px;
+}
+.foot-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-top: 2%;
+}
+.foot-button button{
+    width: fit-content;
+    white-space: nowrap;
+    padding: 15%;
 }
